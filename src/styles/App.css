@@ -1,7 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap");
 body {
-  background: gray;
+  background: url("../images/Bg.svg");
+  font-family: "Crimson Pro", serif;
+}
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.btn {
+  padding: 0.5rem 0.9rem;
+  font-size: 1.2rem;
+  background: #ff005c;
+  border: none;
+  margin: 20px;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Crimson Pro", serif;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.btn:hover {
+  color: #ff005c;
+  background: #fff;
+  font-weight: 600;
+}
+.grid {
+  display: flexbox;
+  justify-content: center;
+}
+.select {
+  font-size: 8px;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

@@ -52,7 +52,7 @@ const Form = (props) => {
     for (let i = 0; i < numberOfData; i++) {
       for (let category of categories) {
         for (let key of Object.keys(options[category])) {
-          if (data[category][key] != undefined) {
+          if (data[category][key] !== undefined) {
             copyData[category][key] = faker[category][key]();
           }
         }
@@ -67,10 +67,13 @@ const Form = (props) => {
   };
   return (
     <>
+      <header>
+        <h1>Fake JSON Data Generator</h1>
+      </header>
       <Grid container spacing={2}>
         {categories.map((category) => (
-          <Grid item sm={3} key={category}>
-            <Paper component={Box} p={3}>
+          <Grid item sm={3} xs={6} key={category}>
+            <Paper component={Box} p={2}>
               <FormControl className={classes.formControl}>
                 <InputLabel>{category}</InputLabel>
                 <Select
@@ -79,6 +82,7 @@ const Form = (props) => {
                   multiple
                   value={Object.keys(data[category])}
                   onChange={handleChange}
+                  className="select"
                   renderValue={(selected) => (
                     <div className={classes.chips}>
                       {selected.map((value) => (
@@ -112,9 +116,12 @@ const Form = (props) => {
           onChange={(e) => setNumberOfData(e.target.value)}
         />
       </Paper>
-      <Button variant="contained" color="secondary" onClick={generateData}>
+      {/* <Button variant="contained" color="secondary" onClick={generateData}>
         Generate Data
-      </Button>
+                  </Button>*/}
+      <button className="btn" onClick={generateData}>
+        Download JSON
+      </button>
     </>
   );
 };
