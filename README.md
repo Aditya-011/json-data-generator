@@ -16,8 +16,8 @@ NPM packages used
 
 - For Live demo, [click here:](https://url-shrinker.netlify.app/)
 
-- <img src="public/images/ss1.png">
+- <img src="src/images/ss1.png">
 
 ## Mobile View
 
-- <img src="public/images/ss2.png">
+- <img src="src/images/ss2.png">
