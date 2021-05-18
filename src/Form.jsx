@@ -9,7 +9,6 @@ import {
   TextField,
   Chip,
   MenuItem,
-  Button,
 } from "@material-ui/core";
 import { options, dataTemplate } from "./options";
 import { makeStyles } from "@material-ui/core/styles";
