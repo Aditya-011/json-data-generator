@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Grid,
   Paper,
@@ -64,6 +64,7 @@ const Form = (props) => {
     setNumberOfData(1);
     setData(dataTemplate);
   };
+
   return (
     <>
       <header>
