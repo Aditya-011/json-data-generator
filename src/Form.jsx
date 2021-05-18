@@ -68,7 +68,7 @@ const Form = (props) => {
   return (
     <>
       <header>
-        <h1>Fake JSON Data Generator</h1>
+        <h1>JSON Data Generator</h1>
       </header>
       <Grid container spacing={2}>
         {categories.map((category) => (
