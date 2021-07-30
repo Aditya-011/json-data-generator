@@ -1,23 +1,40 @@
+
 # React JSON Data Generator App
 
-This project was built using react and hosted on netlify.
-You can generate fake data in JSON format.
+This project was built using react and hosted on netlify. You can generate fake data in JSON format.
 
-##
 
-```
-NPM packages used
+## Demo
+
+https://url-shrinker.netlify.app
+
+## NPM packages used
 - react
 - materialui
 - downloadjs
 - faker
 
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm start
 ```
 
-- For Live demo, [click here:](https://url-shrinker.netlify.app/)
+  
+## Screenshots
 
-- <img src="src/images/ss1.png">
+![App Screenshot](src/images/ss1.png)
 
-## Mobile View
+Mobile View
 
-- <img src="src/images/ss2.png">
+![App Screenshot](src/images/ss2.png)
+
+  
+## Support
+
+For support, email adihgr18@gmail.com
+
+  
